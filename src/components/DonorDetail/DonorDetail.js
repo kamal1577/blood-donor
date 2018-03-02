@@ -14,21 +14,21 @@
 //
 //   //user-default
 //   render() {
-//     const {donorDetail} = this.props;
-//     const date = new Date(donorDetail.dateOfBirth);
+//     const {DonorDetail} = this.props;
+//     const date = new Date(DonorDetail.dateOfBirth);
 //     return (
-//       <div style={styles.donerDetailContainer}>
+//       <div style={styles.DonorDetailContainer}>
 //         <MUI.Card>
 //           <MUI.CardHeader
-//             title={donorDetail.fullName}
-//             subtitle={donorDetail.bloodGroup}
+//             title={DonorDetail.fullName}
+//             subtitle={DonorDetail.bloodGroup}
 //             avatar={<MUI.Avatar icon={<Person />}/>}
 //           />
 //           <MUI.CardText >
-//             <div>Contatct No. : {donorDetail.contactNo}</div>
-//             <div>Email. : {donorDetail.email}</div>
-//             <div>Date Of Birth : {date.toString()}</div>
-//             <div>Address : {donorDetail.address}</div>
+//             <div>ContatctNo. : {DonorDetail.contactNo}</div>
+//             <div>Email. : {DonorDetail.email}</div>
+//             <div>DateOfBirth : {date.toString()}</div>
+//             <div>Address : {DonorDetail.address}</div>
 //           </MUI.CardText>
 //         </MUI.Card>
 //       </div>

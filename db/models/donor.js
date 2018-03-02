@@ -28,10 +28,15 @@ const Donor = db.define('donors', {
     type: Sequelize.STRING,
     allowNull: false
   },
-  blood_type:{
+  blood_Group:{
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  address:{
     type: Sequelize.STRING,
     allowNull: false
   }
+
 
 });
 

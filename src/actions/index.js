@@ -65,14 +65,15 @@
 //
 //
 //         /// Fetch Donor List Functions
-//     //     static getDonorList(bloodGroup) {
-//     //         console.log("getDonorList ",bloodGroup);
-//     //         return (dispatch) => {
-//     //             dispatch(DonorActions.getDonorList())
-//     //             DonorMiddleware.getDonorListFromFirebase(dispatch,bloodGroup);
-//     //         }
-//     //     }
-//     //
+//          getDonorList(bloodGroup) {
+//             console.log("getDonorList ",bloodGroup);
+//             return (dispatch) => {
+//                 dispatch(Actions.getDonorList())
+//                 // dispatch(DonorActions.getDonorList())
+//                 // DonorMiddleware.getDonorListFromFirebas(dispatch,bloodGroup);
+//             }
+//         }
+//
 //     //     static getDonorListFromFirebase(dispatch,bloodGroup){
 //     //         //playersRef.orderByChild("name").equalTo("John")
 //     //         const donorListRef = firebase.database().ref('/')

@@ -22,7 +22,7 @@ router.post('/create/donor', function(req, res, next) {
         email: req.body.donor.email,
         password: '12345',
         date_Of_Birth: req.body.donor.dateOfBirth,
-        blood_type: req.body.donor.bloodType
+        blood_Group: req.body.donor.bloodGroup
       }).then(result => {
           res.status(200).send(result);
       })

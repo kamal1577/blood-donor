@@ -1,27 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Routes from './routes.js';
-
-import './index.css';
-
-import { Provider } from 'react-redux';
-import { applyMiddleware, createStore } from 'redux';
-import { createLogger } from 'redux-logger';
-import thunk from 'redux-thunk';
-import rootReducer from './reducers';
-import { composeWithDevTools } from 'redux-devtools-extension';
-
-const middleware = applyMiddleware(thunk, createLogger());
-
-const store = createStore(rootReducer, composeWithDevTools(
-  middleware,
-));
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
+import App from "./App";
+import registerServiceWorker from "./registerServiceWorker";
 
 ReactDOM.render(
-  <Provider store={store}>
-    <Routes />
-  </Provider>
-,
-
-  document.getElementById('root')
+  <BrowserRouter>
+     <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
+registerServiceWorker();
