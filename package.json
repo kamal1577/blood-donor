@@ -45,5 +45,6 @@
     "react-dev-utils": "^5.0.0",
     "homepage": "http://kamal1577.github.io/blood-donor"
   },
-  "proxy": "http://localhost:8000"
+
+  "proxy": "http://localhost:8080"
 }
